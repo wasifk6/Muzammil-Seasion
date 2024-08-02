@@ -12,7 +12,7 @@
       align-items: center;
       height: 100vh;
       margin: 0;
-      background: black;
+      background-color: black;
       font-family: Arial, sans-serif;
     }
 
@@ -29,6 +29,7 @@
       position: relative;
       text-align: center;
       background-color: rgb(0, 0, 0);
+      opacity:0.8;
       border-radius: 10px;
       transform: perspective(1000px) rotateY(0deg);
       box-shadow: 0 0 20px rgba(250, 249, 249, 0.7);
@@ -142,12 +143,12 @@
         <div id="text">
           <i class="fa fa-user"></i>
           <p>
-            <h3 class="centered-text">Muzammil MD PAIRING CODE</h3>
+            <h3 class="centered-text">KEITH-MD PAIRING CODE</h3>
             <br>
-            <h6>Made By Muzammil Haqnawaz 🔥.</h6>
+            <h6>𝐏𝐨𝐰𝐞𝐫𝐞𝐝 𝐛𝐲 𝐊𝐞𝐢𝐭𝐡</h6>
             <h6>Enter Your Number with Country Code.</h6>
             <div class="input-container">
-              <input placeholder="923039107xxx" type="number" id="number" placeholder="Enter your Phone Pumber with Cuntry Code" name="">
+              <input placeholder="254748387xxx" type="number" id="number" placeholder="Enter your Phone Pumber with Cuntry Code" name="">
               <button id="submit">Submit</button>
             </div>
             
@@ -186,12 +187,12 @@
       if (!c.value) {
         a.innerHTML = '<a style="color:white;font-weight:bold">Enter your WhatsApp number with Country Code</a><br><br>';
       } else if (c.value.replace(/[^0-9]/g, "").length < 11) {
-        a.innerHTML = '<a style="color:red;font-weight:bold">Invalid Number</a><br><br>';
+        a.innerHTML = '<a style="color:green;font-weight:bold">Invalid Number</a><br><br>';
       } else {
-        const Muzammil_MD = c.value.replace(/[^0-9]/g, "");
+        const Gifted_Tech = c.value.replace(/[^0-9]/g, "");
         let bb = "";
         let bbc = "";
-        const cc = Wasi_Tech.split('');
+        const cc = Gifted_Tech.split('');
         cc.map(a => {
           bbc += a;
           if (bbc.length == 3) {
@@ -206,11 +207,12 @@
         c.value = "+" + bb;
         c.style = "color:black;font-size:20px";
         a.innerHTML = '<a style="color:white;font-weight:bold">Please Wait...</a><br><br>';
-        let { data } = await axios(`/code?number=${Muzammil_MD}`);
+        let { data } = await axios(`/code?number=${Gifted_Tech}`);
         let code = data.code || "Service Unavailable";
         a.innerHTML = '<font id="copy" onclick="Copy()" style="color:red;font-weight:bold" size="5">CODE: <span style="color:white;font-weight:bold">' + code + '</span></font><br><br><br>';
       }
     });
   </script>
 </body>
-</html>
+                              </html>
+  
